@@ -8,8 +8,10 @@
 
 var sum = function(a, b) {
     "use strict";
-    /// return ...
+    return a + b;
 }
+
+// sum(8,11)
 
 console.log(sum(8, 11));
 
@@ -38,7 +40,11 @@ var mark = {
 var getAverageTime = function(person) {
     "use strict";
     // ... return ...
+var total = person.finishingTime1 + person.finishingTime2 + person.finishingTime3 + person.finishingTime4 + person.finishingTime5
+var average = (total / 5)
+return average
 }
+
 
 console.log(getAverageTime(matt));
 console.log(getAverageTime(mark));
@@ -76,8 +82,10 @@ function addToBank(account, savings, retirement, checking) {
 
 function getSumOfAccounts(account) {
     "use strict";
-    // return ...
+    return account.checking + account.savings + account.retirement
 }
+
+
 
 addToBank(MattsBankAccount, 100, 10, 1);
 addToBank(RobertosBankAccount, 200, 50, 19);
